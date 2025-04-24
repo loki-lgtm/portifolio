@@ -1,0 +1,178 @@
+/* Variáveis de cor atualizadas para vermelho */
+:root {
+    --vermelho: #e74c3c;
+    --vermelho-escuro: #c0392b;
+    --texto-claro: #f1f1f1;
+    --borda-destaque: #ff4d4d;
+    --gradiente-botao: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("teste.avif"); /* substitua pelo nome real da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--texto-claro);
+}
+
+/* Página principal */
+.tela-principal {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.bloco-de-fundo {
+    background-image: url("terror.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7); /* camada escura */
+    background-blend-mode: darken;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 0 30px var(--borda-destaque);
+}
+
+
+.bloco-maior {
+    max-width: 1000px;
+}
+
+.conteudo {
+    max-width: 500px;
+}
+
+.destaque {
+    color: var(--vermelho);
+}
+
+.links a {
+    margin-right: 15px;
+    padding: 10px 20px;
+    background: var(--gradiente-botao);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+    display: inline-block;
+    box-shadow: 0 0 10px var(--vermelho);
+}
+
+.links a:hover {
+    transform: scale(1.05);
+}
+
+.foto img {
+    width: 200px;
+    border-radius: 20px;
+    border: 4px solid var(--vermelho);
+}
+
+/* Página Home */
+.pagina-home {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 100px 40px 40px;
+    color: var(--texto-claro);
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.projeto {
+    background-color: #2d2d2d;
+    border-radius: 15px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 0 15px var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projeto h2 {
+    color: var(--vermelho);
+    margin-bottom: 10px;
+}
+
+.divisor {
+    width: 100%;
+    height: 2px;
+    background: var(--vermelho);
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.tag {
+    background: var(--gradiente-botao);
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    box-shadow: 0 0 5px var(--vermelho);
+}
+
+/* Botão Home */
+.botao-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--gradiente-botao);
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 10px var(--vermelho);
+    transition: transform 0.3s;
+}
+
+.botao-home:hover {
+    transform: scale(1.05);
+}
+
+.sobre-tecnologias {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 60px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--vermelho);
+    color: var(--texto-claro);
+}
+
+.sobre-tecnologias h2, .sobre-tecnologias h3 {
+    color: var(--vermelho);
+    margin-bottom: 10px;
+}
+
+.sobre-tecnologias p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
